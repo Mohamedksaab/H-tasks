@@ -1,0 +1,232 @@
+@font-face {
+    font-family: Droid;
+    src: url(fonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Droid;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a1a1a156;
+    backdrop-filter: blur(5px);
+    z-index: 999;
+    display: none;
+}
+
+.menu div{
+    width: 500px;
+    background: #fff;
+    padding: 38px 20px 20px 20px;
+    border-radius: 0px 30px 0px 30px;
+    text-align: right;
+    position: relative;
+    margin: 5% auto;
+
+}
+.menu div div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+
+}
+.menu div h2{
+    position: relative;
+}
+.menu div h2::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #c5353c;
+}
+.menu div div button{
+    width: 180px;
+    color: #fff;
+    background: #69635f;
+    font-weight: 900;
+    margin: 25px auto 0 auto;
+    border: none;
+    border-radius: 6px;
+    line-height: 37px;
+    height: 39px;
+    margin: 8px auto;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.menu div div button:hover{
+    background-color: #c5353c;
+}
+.menu div i{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 2.5rem;
+    color: #b42c32;
+    cursor: pointer;
+}
+.menu-active{
+    display: block;
+}
+
+
+
+header{
+    width: 50%;
+    margin: auto;
+    padding: 15px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.call-nav{
+    display: flex;
+    align-items: center;
+}
+.call-nav i {
+    font-size: 31px;
+    margin: 0px 11px;
+    opacity: 0.6;
+}
+.call-nav h3 {
+    font-family: arial, sans-serif;
+    font-size: 1.4em;
+    color: #c5353c;
+}
+.call-nav p {
+    font-size: 0.6em;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.navbar h3{
+    font-size: 0.8rem;
+}
+.navbar i{
+    color: #c5353c;
+    font-size: 2rem;
+    padding: 1px;
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.navbar i:hover{
+    border: 1px solid #c5353c;
+
+}
+
+
+/* main */
+
+.hero{
+    background: url(img/12121f89a76c528b36fcd4771a652910.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 0;
+}
+.hero-cont{
+    width: 50%;
+    margin-top: 150px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+.hero-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    max-width: 600px;
+}
+.hero-container i {
+    font-size: 2.5rem;
+    color: #c5353c;
+    border: 1px solid #c9c9c9;
+    padding: 15px;
+    margin-left: 25px;
+}
+.hero-container h2 {
+    font-size: 1em;
+    font-weight: lighter;
+    color: #b42c32;
+}
+.hero-container p{
+    line-height: 22px;
+    font-size: 0.75em;
+    padding-top: 5px;
+}
+.hero-cont button{
+    width: 250px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16.6667%;
+    margin-top: 50px;
+    color: #fff;
+    background: #c2252d;
+    font-size: 1em;
+    border: none;
+    border-radius: 40px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.hero-cont button i{
+    font-size: 1.5rem;
+    position: absolute;
+    right: 15px;
+}
+.hero-cont button:hover{
+    background-color: #494c51;
+}
+
+@media (max-width: 992px) {
+    header{
+        width: 90%;
+    }
+    .hero-cont{
+        width: 90%;
+    }
+
+}
+@media (max-width: 768px) {
+    .menu div{
+        width: 300px;   
+    }
+    .menu div div button{
+        width: 100px;
+    }
+    header{
+        width: 100%;
+    }
+    .hero-cont{
+        width: 90%;
+    }
+
+}
