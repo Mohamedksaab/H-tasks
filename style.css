@@ -225,8 +225,14 @@ header{
     header{
         width: 100%;
     }
+    .hero{
+        padding: 80px 0 10px 0;
+    }
     .hero-cont{
-        width: 90%;
+        width: 100%;
+        background-color: white;
+        padding: 30px 10px;
+
     }
 
 }
